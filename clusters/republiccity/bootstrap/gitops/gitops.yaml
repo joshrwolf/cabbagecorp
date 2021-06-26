@@ -18,7 +18,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m0s
-  path: ./clusters/republiccity/gitops
+  path: ./clusters/republiccity/bootstrap
   prune: true
   sourceRef:
     kind: GitRepository
