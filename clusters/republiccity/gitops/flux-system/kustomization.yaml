@@ -4,6 +4,8 @@ resources:
   - flux-components.yaml
   - gitops.yaml
 
+  - sources/
+
 patches:
   - target:
       group: apps

@@ -1,0 +1,18 @@
+apiVersion: k3d.io/v1alpha2
+kind: Simple
+name: cabbagecorp
+servers: 1
+agents: 0
+image: "rancher/k3s:v1.21.2-k3s1"
+volumes:
+  - volume: container-cache:/var/lib/rancher/k3s/agent/containerd/io.containerd.content.v1.content
+    nodeFilters:
+      - server[*]
+      - agent[*]
+ports:
+  - port: 80:80
+    nodeFilters:
+      - loadbalancer
+  - port: 433:433
+    nodeFilters:
+      - loadbalancer
