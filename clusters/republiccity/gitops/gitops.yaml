@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 5m0s
-  path: ./clusters/republiccity/gitops/sources
+  path: ./clusters/republiccity/gitops/flux-system/sources
   prune: true
   sourceRef:
     kind: GitRepository
