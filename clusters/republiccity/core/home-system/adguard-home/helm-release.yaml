@@ -16,3 +16,10 @@ spec:
   values:
     env:
       TZ: "America/Denver"
+    service:
+      dns-tcp:
+        enabled: true
+        type: LoadBalancer
+      dns-udp:
+        enabled: true
+        type: LoadBalancer
