@@ -3,6 +3,7 @@ kind: Kustomization
 resources:
   - k8s-at-home.yaml
   - coredns.yaml
+  - jetstack.yaml
 
 patches:
   - target:
