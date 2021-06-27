@@ -12,7 +12,6 @@ patches:
       apiVersion: helm.toolkit.fluxcd.io/v2beta1
       kind: HelmRelease
       metadata:
-        name: helmreleases
+        name: home-system
       spec:
-        interval: 5m
         targetNamespace: home-system

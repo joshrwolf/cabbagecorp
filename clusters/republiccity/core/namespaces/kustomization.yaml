@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - home-system.yaml
   - falco-system.yaml
+  - cert-manager.yaml
