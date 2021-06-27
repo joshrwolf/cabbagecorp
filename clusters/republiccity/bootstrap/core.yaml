@@ -11,3 +11,7 @@ spec:
   sourceRef:
     kind: GitRepository
     name: cabbagecorp
+  decryption:
+    provider: sops
+    secretRef:
+      name: sops-gpg
