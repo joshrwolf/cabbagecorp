@@ -6,6 +6,6 @@ spec:
   secretName: home-wolfs-io-tls
   issuerRef:
     kind: ClusterIssuer
-    name: letsencrypt-staging
+    name: letsencrypt-prod
   dnsNames:
   - '*.home.wolfs.io'
