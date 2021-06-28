@@ -1,0 +1,19 @@
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: adguard
+spec:
+  entryPoints:
+    - web
+  routes:
+    - kind: Rule
+      match: Host(`adguard.home.wolfs.io`) && PathPrefix(`/`)
+      services:
+        - kind: Service
+          name: home-system-adguard-adguard-home
+          namespace: home-system
+          port: 3000
+      middlewares:
+        - name: traefik-forward-auth
+          namespace: kube-system

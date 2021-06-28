@@ -5,7 +5,7 @@ metadata:
   name: core
   namespace: flux-system
 spec:
-  interval: 5m0s
+  interval: 2m0s
   path: ./clusters/republiccity/core
   prune: true
   sourceRef:
