@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: traefikforward-auth
+  name: traefik-forward-auth
 spec:
   replicas: 1
   strategy:
