@@ -15,5 +15,7 @@ spec:
           namespace: home-system
           port: 3000
       middlewares:
+        - name: https-redirect
+          namespace: kube-system
         - name: traefik-forward-auth
           namespace: kube-system
