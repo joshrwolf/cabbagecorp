@@ -5,6 +5,7 @@ metadata:
   name: adguard
 spec:
   entryPoints:
+    - web
     - websecure
   routes:
     - kind: Rule
