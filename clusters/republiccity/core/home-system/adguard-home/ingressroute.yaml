@@ -5,7 +5,7 @@ metadata:
   name: adguard
 spec:
   entryPoints:
-    - web
+    - websecure
   routes:
     - kind: Rule
       match: Host(`adguard.home.wolfs.io`) && PathPrefix(`/`)
@@ -17,5 +17,3 @@ spec:
       middlewares:
         - name: traefik-forward-auth
           namespace: kube-system
-  tls:
-    secretName: home-wolfs-io-tls
