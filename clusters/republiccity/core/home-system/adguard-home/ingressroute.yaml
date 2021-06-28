@@ -17,3 +17,5 @@ spec:
       middlewares:
         - name: traefik-forward-auth
           namespace: kube-system
+  tls:
+    secretName: home-wolfs-io-tls
